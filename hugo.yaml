@@ -1,0 +1,106 @@
+baseURL: "https://vaseemahammed.github.io/"
+languageCode: "en-us"
+title: "Vaseem Ahammed Shaik"
+theme: PaperMod
+
+params:
+  env: production
+  title: "Vaseem Ahammed Shaik"
+  description: "Vaseem Ahammed Shaik's Personal Portfolio Website"
+  keywords: [Portfolio, Blog, Software Engineer]
+  author: "Vaseem Ahammed Shaik"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  
+  # Profile-mode
+  profileMode:
+    enabled: true
+    title: "Vaseem Ahammed Shaik"
+    subtitle: "A curious software engineer who explores all kinds of tech and loves making it easy for others to understand."
+    imageUrl: "img/profile-top-third.jpeg"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: "Profile Photo"
+    buttons:
+      - name: Projects
+        url: "/projects/"
+      - name: Experience
+        url: "/experience/"
+      - name: Blog
+        url: "/blog/"
+      - name: Skills
+        url: "/skills/"
+
+  # Home-info mode (alternative if you don't want profile mode)
+  homeInfoParams:
+    Title: "Hi, I'm Vaseem 👋"
+    Content: "A curious software engineer who explores all kinds of tech and loves making it easy for others to understand."
+
+  # Social Links
+  socialIcons:
+    - name: github
+      url: "https://github.com/vaseemahammed"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/vaseem-ahammed-shaik/"
+  
+  # mainSections to show in archive
+  mainSections:
+    - projects
+    - experience
+    - blog
+    - skills
+
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archive/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: experience
+      name: Experience
+      url: /experience/
+      weight: 30
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 40
+    - identifier: skills
+      name: Skills
+      url: /skills/
+      weight: 50
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 60
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 70
+
+# Search functionality
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search 
+
+# Custom CSS
+assets:
+  disableHLJS: false
+  favicon: 
+  favicon16x16: 
+  favicon32x32: 
+  apple_touch_icon: 
+  safari_pinned_tab: 
+  css:
+    - "css/extended.css"

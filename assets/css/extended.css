@@ -1,0 +1,19 @@
+/* Custom styles for profile image */
+.profile img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Focus on face for full-body image */
+    object-position: center top;
+    /* Improve image quality */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    border: 3px solid #f8f8f8;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+} 

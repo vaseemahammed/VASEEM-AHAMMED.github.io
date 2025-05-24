@@ -1,0 +1,16 @@
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node modules (if using any npm packages)
+node_modules/ 
